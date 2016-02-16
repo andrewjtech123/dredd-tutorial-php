@@ -1,9 +1,0 @@
-machine:
-  php:
-    version: 5.5.11
-dependencies:
-  pre:
-      - npm install -g dredd
-test:
-  pre:
-    - dredd

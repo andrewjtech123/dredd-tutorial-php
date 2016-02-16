@@ -1,4 +1,4 @@
-# PoSobota API
+# Polls API - Skeleton in PHP for testing by Dredd
 
 [![Circle CI](https://circleci.com/gh/abtris/posobota-demo-polls-api/tree/master.svg?style=svg&circle-token=dbb5f22a5b6fe44b90c727494ac0d275f18cae16)](https://circleci.com/gh/abtris/posobota-demo-polls-api/tree/master)
 
@@ -19,4 +19,3 @@
 ## Run tests
 
     dredd
-

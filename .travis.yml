@@ -2,11 +2,14 @@ sudo: false
 language: php
 cache:
   directories:
-    - $HOME/.composer/cache
+  - "$HOME/.composer/cache"
 php:
-  - 5.5
+- 5.5
 before_install:
-  - npm install -g dredd
-  - composer install
+- npm install -g dredd
+- composer install
 script:
-  - dredd
+- dredd
+env:
+  global:
+  - secure: 0/3DejgfsnId33EaJ9Bp0BczoLhFEg8UEdXcZxgf679NZUAczK3Bmt/5T5rPRBfukm2qxTmHA062YeIFIy4z/wz7DND+U8x3mFwwlQ+HfR/2hAVpojYMkv80QVp7lwRpTDgBsDbhXhtgxqk8HNfANVE4m2l6tltt5Wit1pyaYJd/rV6r+TI+1IdGKhIK4nr4ns9SaF3KrwpKbg7xkRKgK2kqpO4EyjoMrL46UiA6hhEm6qWK/oUapTnNphPVlHYTvBYZUy8tBYr7BN+6uD+FxgbtKEOKpnMhh9wqUirf7YSD1dsUSleVEJu6A8qxHlJGDAO47TIj+zk5/fiJfPT+jmsgT3AJVMLJ5qAD1p0IIqKpcPLjPxneCNpsWbK+I5jlWmdQjK/rfVq1bR/BrOIm26p7cJv343ve29/zWaCKUOiDb6XNde1J4iJWcVEYUpgiFrshJxdi+xnhL8c3jXO3KFEm+0pfJ5t0HNm7QK8p3oZYokwDnC2WvHzwRwChPwbeQk98UI0cfA4WP47AJHbI+ZZqaGNjnN38HASjh/powh8LugLyzCRCeFEkhZclwseI3BqyL0UJp3weGI89R6MHiH5zBXjqq7f0rL/EVWPP0IdvruwUICobyNlfqyQwR/JoYnFCRwz+hau6bzW0Q0ENJoYWTlG95JDxe+i72jzQSAw=

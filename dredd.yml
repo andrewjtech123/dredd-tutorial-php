@@ -1,6 +1,7 @@
 reporter: apiary
 dry-run: null
 hookfiles: null
+language: php
 sandbox: false
 server: 'php -S 0.0.0.0:3000 -t web'
 server-wait: 3

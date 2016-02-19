@@ -2,16 +2,16 @@ sudo: false
 language: php
 cache:
   directories:
-  - "$HOME/.composer/cache"
+    - $HOME/.composer/cache
 php:
-- 5.5
+  - 5.5
 before_install:
-- npm install -g dredd
-- composer install
+  - npm install -g dredd
+  - composer install
 before_script:
-- dredd
+  - dredd
 script:
-- vendor/bin/phpunit test/
+  - vendor/bin/phpunit test/
 env:
   global:
-  - secure: myjZhIS34NXLXexHtQc1WrvsD08rBXEEc4t4csio9mPOfwaDF70sRCmJMSo0y1TjuNpLLlR270sXBtjIORrHq3LLCYXUbGYsqI3L/dVougn58VZ4zTexqVEnnxJorAiXrHIOJgYfM7e7auqYOO/rAyw6QgwYPA6qML0tprJNF0bhpo3ktEyoKInOYWEszBvjIrLbd14fWGldlqA/aXFZ9UGzUToXv48SDMWTzHrJWJaQySB/KiGtlSb60PiYNg/3sAQys7C2mRsewzIq02SDMX6WwPS65OIFXydQb5ZTcLZc4FjcVqVDfl4v7T5KXNoANx5Bamudoeo742VYw2j5PneGCfS2bMB9S6iuEkM0w1akuZA5HAInTblSEWhVF/YqCmqCLkpvoTwAO1XGSWs/rEGS1AuwT/+2IqCrBJ22mbN8jqpL+lgKCEhagqgzdQIaOvqpJAiwK9CfXuPCGPhJrfJNBQJYFz4gUNhRsixPN9sdskdn3Niy79Rw1an/IjmVlBuBdwp/F99WrGz23iZFNPs4lgDqqlZK7RVuP947RbrQGy/S6OLhvVnDp4Ny5kc+abQi4COgTF7jfvxlsSflp7LfH2oKhh0L/T0buNkZm5JrlFjodudGYCTQyj2N5U6xJL7QFti1rbj4Qi4CRXYdB1T55d+4AUSCHSMj11h8tWg=
+    - secure: myjZhIS34NXLXexHtQc1WrvsD08rBXEEc4t4csio9mPOfwaDF70sRCmJMSo0y1TjuNpLLlR270sXBtjIORrHq3LLCYXUbGYsqI3L/dVougn58VZ4zTexqVEnnxJorAiXrHIOJgYfM7e7auqYOO/rAyw6QgwYPA6qML0tprJNF0bhpo3ktEyoKInOYWEszBvjIrLbd14fWGldlqA/aXFZ9UGzUToXv48SDMWTzHrJWJaQySB/KiGtlSb60PiYNg/3sAQys7C2mRsewzIq02SDMX6WwPS65OIFXydQb5ZTcLZc4FjcVqVDfl4v7T5KXNoANx5Bamudoeo742VYw2j5PneGCfS2bMB9S6iuEkM0w1akuZA5HAInTblSEWhVF/YqCmqCLkpvoTwAO1XGSWs/rEGS1AuwT/+2IqCrBJ22mbN8jqpL+lgKCEhagqgzdQIaOvqpJAiwK9CfXuPCGPhJrfJNBQJYFz4gUNhRsixPN9sdskdn3Niy79Rw1an/IjmVlBuBdwp/F99WrGz23iZFNPs4lgDqqlZK7RVuP947RbrQGy/S6OLhvVnDp4Ny5kc+abQi4COgTF7jfvxlsSflp7LfH2oKhh0L/T0buNkZm5JrlFjodudGYCTQyj2N5U6xJL7QFti1rbj4Qi4CRXYdB1T55d+4AUSCHSMj11h8tWg=

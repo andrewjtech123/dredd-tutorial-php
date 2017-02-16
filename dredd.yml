@@ -1,9 +1,12 @@
 reporter: apiary
+custom:
+  apiaryApiKey: cc52e0a16b1034ea68dff2759d31d8ae
+  apiaryApiName: dreddtutorialphp
 dry-run: null
 hookfiles: null
-language: php
+language: nodejs
 sandbox: false
-server: 'php -S 0.0.0.0:3000 -t web'
+server: 'php -S 0.0.0.0:8000 -t web'
 server-wait: 3
 init: false
 names: false
@@ -20,5 +23,14 @@ level: info
 timestamp: false
 silent: false
 path: []
+hooks-worker-timeout: 5000
+hooks-worker-connect-timeout: 1500
+hooks-worker-connect-retry: 500
+hooks-worker-after-connect-wait: 100
+hooks-worker-term-timeout: 5000
+hooks-worker-term-retry: 500
+hooks-worker-handler-host: localhost
+hooks-worker-handler-port: 61321
+config: ./dredd.yml
 blueprint: apiary.apib
 endpoint: 'http://localhost:3000'
